@@ -1,0 +1,15 @@
+--2020-03-24 17:49:59--  https://e.infogram.com/01266038-4580-4cf0-baab-a532bd968d0c?parent_url=https%3A%2F%2Fwww.ins.gov.co%2FNoticias%2FPaginas%2FCoronavirus.aspx
+Resolviendo e.infogram.com (e.infogram.com)... 52.52.241.37, 54.193.127.96
+Conectando con e.infogram.com (e.infogram.com)[52.52.241.37]:443... conectado.
+Petici'on HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localizaci'on: https://e.infogram.com/01266038-4580-4cf0-baab-a532bd968d0c?src=embed&parent_url=https%3A%2F%2Fwww.ins.gov.co%2FNoticias%2FPaginas%2FCoronavirus.aspx [siguiendo]
+--2020-03-24 17:50:00--  https://e.infogram.com/01266038-4580-4cf0-baab-a532bd968d0c?src=embed&parent_url=https%3A%2F%2Fwww.ins.gov.co%2FNoticias%2FPaginas%2FCoronavirus.aspx
+Reutilizando la conexi'on con e.infogram.com:443.
+Petici'on HTTP enviada, esperando respuesta... 200 OK
+Longitud: 73902 (72K) [text/html]
+Grabando a: "01266038-4580-4cf0-baab-a532bd968d0c?parent_url=https:%2F%2Fwww.ins.gov.co%2FNoticias%2FPaginas%2FCoronavirus.aspx"
+
+          01266038-   0%[                    ]       0  --.-KB/s                        01266038-4  60%[===========>        ]  43.47K   136KB/s               01266038-4580-4cf0- 100%[===================>]  72.17K   202KB/s    en 0.4s    
+
+2020-03-24 17:50:00 (202 KB/s) - "01266038-4580-4cf0-baab-a532bd968d0c?parent_url=https:%2F%2Fwww.ins.gov.co%2FNoticias%2FPaginas%2FCoronavirus.aspx" guardado [73902/73902]
+
