@@ -22,7 +22,7 @@ def Montecarlo(daysrate,n,acceleration):
     RateSickness=(1/daysrate)
     RateHealth=(1/16)
     Days=range(n+1)
-    samples=10000
+    samples=1000
     Samples=range(samples)
     T=48258494
     PersonsMean=np.zeros(n+1)
@@ -66,8 +66,9 @@ for i in dias:
 plt.scatter(dias,CumulativeDays)
 ##Now we make a regression model
 Rates=np.linspace(1e-3,3,1000)
-a_c= np.linspace(1.3,1.5,10)
+a_c= np.linspace(1.2,1.3,3)
 besterror=10000000
+##fitting parameters
 for rate in Rates:
     for accel in a_c:
     #B=RegresionLog(1,rate,17,48258494)
@@ -77,11 +78,11 @@ for rate in Rates:
             besterror=MSE
             bestaccel=accel
             best=rate
-print(best)
+print("best incoming rate:",best,"best acceleration ",bestaccel)
 z = np.polyfit(dias,CumulativeDays, 3)
 p = np.poly1d(z)
 B,A=Montecarlo(best,NuevosDia.index.values[-1],bestaccel)
-print(A)
+print("Model simulated arrivals :",A)
 plt.plot(dias,p(dias))
 plt.plot(dias,A)
 #proyeccion de datos
@@ -90,5 +91,5 @@ d=500
 da=range(d+1)
 LongRange,Arrivals=Montecarlo(best,da[-1],bestaccel)
 plt.plot(da,LongRange)
-print(np.max(LongRange),Arrivals[19:23])
+print("Maximum number of infecteds:",np.max(LongRange),"proyecctions for the following days",Arrivals[19:23])
 plt.show()
